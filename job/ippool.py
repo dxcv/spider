@@ -1,0 +1,1 @@
+pos_info['position'], pos_info['company'], pos_info['company_size'], pos_info['company_business'], pos_info['workYear'], pos_info['education'], pos_info['bmsg'], pos_info['response'], pos_info['salary'], pos_info['job_msg_text

@@ -1,0 +1,750 @@
+INFO:scrapy.utils.log:Scrapy 1.3.3 started (bot: house)
+INFO:scrapy.utils.log:Overridden settings: {'BOT_NAME': 'house', 'NEWSPIDER_MODULE': 'house.spiders', 'SPIDER_MODULES': ['house.spiders'], 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'}
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+['house.pipelines.HousePipeline']
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+DEBUG:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/?from=navigation> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-435461.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-435461.html?from=loupan_tab>
+{'address': '广运潭大道与欧亚大道十字东北角                            ',
+ 'bedrooms': [],
+ 'developer': '西安君都侨商置业有限公司',
+ 'house_type': '办公楼',
+ 'name': '旭辉荣华公园大道',
+ 'price': '待定',
+ 'region': '浐灞',
+ 'release': '暂无数据',
+ 'status': '待售',
+ 'street': '浐河',
+ 'tags': ['投资地产', '单身公寓', '品牌开发商', '二至三环'],
+ 'turn': '暂无数据'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-297647.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-246670.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-417883.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-297647.html?from=loupan_tab>
+{'address': '世博大道出东二环向东800米（世博大道2199号）                            ',
+ 'bedrooms': ['2室户型 (3)', '3室户型 (8)', '4室户型 (4)'],
+ 'developer': '西安长岛盛业置业有限公司',
+ 'house_type': '住宅',
+ 'name': '世园大公馆',
+ 'price': '住宅11000元/㎡',
+ 'region': '浐灞',
+ 'release': '2017-12-13',
+ 'status': '期房在售',
+ 'street': '世园会',
+ 'tags': ['南北通透', '刚需房', '三环以外', '大阳台', '飘窗'],
+ 'turn': '2020-09-30'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-431818.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-246670.html?from=loupan_tab>
+{'address': '龙朔路,近学府环路                            ',
+ 'bedrooms': ['3室户型 (8)', '4室户型 (7)', '6室户型 (3)'],
+ 'developer': '陕西聚安实业有限公司',
+ 'house_type': '住宅',
+ 'name': '龙记玖玺',
+ 'price': '住宅9000元/㎡',
+ 'region': '城北',
+ 'release': '2017-12-30',
+ 'status': '期房在售',
+ 'street': '未央大学城',
+ 'tags': ['二至三环', '南北通透', '大型社区', '双卫', '大阳台'],
+ 'turn': '2019-12-31'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-425386.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-417883.html?from=loupan_tab>
+{'address': '东长安街与南长安街十字向东100米                            ',
+ 'bedrooms': ['3室户型 (3)', '4室户型 (1)'],
+ 'developer': '西安星凯置业有限公司',
+ 'house_type': '住宅',
+ 'name': '红星紫御半山',
+ 'price': '住宅11500元/㎡',
+ 'region': '长安',
+ 'release': '2017-12-17',
+ 'status': '期房在售',
+ 'street': '航天基地',
+ 'tags': ['轨交房', '南北通透', '三环以外', '双卫', '大阳台'],
+ 'turn': '2019-12-31'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-249793.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-427526.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-431818.html?from=loupan_tab>
+{'address': '东三环和世博大道交会向东300米                            ',
+ 'bedrooms': ['3室户型 (1)', '4室户型 (3)', '6室户型 (1)'],
+ 'developer': '西安长岛新业置业有限公司',
+ 'house_type': '住宅',
+ 'name': '中南樾府',
+ 'price': '住宅16500元/㎡',
+ 'region': '浐灞',
+ 'release': '2017-12-23',
+ 'status': '期房在售',
+ 'street': '世园会',
+ 'tags': ['轨交房', '品牌开发商', '人车分流', '车位充足', '刚需房'],
+ 'turn': '2020-01-31'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-416038.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-424139.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-416002.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-425386.html?from=loupan_tab>
+{'address': '雁翔路与春林路十字交汇处向西400米                            ',
+ 'bedrooms': ['3室户型 (3)', '4室户型 (2)'],
+ 'developer': '西安渊垣实业有限公司',
+ 'house_type': '住宅',
+ 'name': '阳光城PLUS',
+ 'price': '住宅12000元/㎡',
+ 'region': '曲江区',
+ 'release': '2017-11-10',
+ 'status': '期房在售',
+ 'street': '曲江新区',
+ 'tags': ['品牌开发商', '改善房', '大型社区', '三环以外', '公园'],
+ 'turn': '2019-12-30'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-249793.html?from=loupan_tab>
+{'address': '尚新路,近尚贤路                            ',
+ 'bedrooms': ['3室户型 (2)', '4室户型 (1)'],
+ 'developer': '西安杨林房地产开发有限公司',
+ 'house_type': '住宅',
+ 'name': '隆源国际城YUE公园',
+ 'price': '住宅9300元/㎡',
+ 'region': '城北',
+ 'release': '2017-11-24',
+ 'status': '期房在售',
+ 'street': '北客站',
+ 'tags': ['轨交房', '综合体', '投资地产', '人车分流', '南北通透'],
+ 'turn': '2020-08-31'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-427526.html?from=loupan_tab>
+{'address': '汉城南路8号                            ',
+ 'bedrooms': ['2室户型 (2)', '3室户型 (5)'],
+ 'developer': '陕西宏盛实业有限公司',
+ 'house_type': '住宅',
+ 'name': '当代宏府MOMΛ',
+ 'price': '住宅待定',
+ 'region': '城西',
+ 'release': '预计3月中下旬推5号楼',
+ 'status': '待售',
+ 'street': '汉城路',
+ 'tags': ['轨交房', '二至三环', '刚需房', '商场', '银行'],
+ 'turn': '2号楼交房时间待定'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-414890.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-416038.html?from=loupan_tab>
+{'address': '天台路,近征和四路                            ',
+ 'bedrooms': ['3室户型 (2)', '4室户型 (1)'],
+ 'developer': '西安熠坤置业有限公司',
+ 'house_type': '住宅',
+ 'name': '蓝光公园华府',
+ 'price': '住宅待定',
+ 'region': '西咸新区',
+ 'release': '预计3月中推出2号楼',
+ 'status': '待售',
+ 'street': '沣东新城',
+ 'tags': ['轨交房', '品牌开发商', '人车分流', '新开盘', '刚需房'],
+ 'turn': '2号楼交房日期待定'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-415230.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-383876.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-424139.html?from=loupan_tab>
+{'address': '大寨路                            ',
+ 'bedrooms': ['3室户型 (2)', '4室户型 (1)'],
+ 'developer': '陕西华洲置业发展有限公司',
+ 'house_type': '住宅',
+ 'name': '华洲城云顶',
+ 'price': '住宅11000元/㎡',
+ 'region': '高新',
+ 'release': '2018-01-20',
+ 'status': '期房在售',
+ 'street': '大寨路',
+ 'tags': ['轨交房', '二至三环', '科技住宅', '商场', '银行'],
+ 'turn': '2020-01-30'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-416002.html?from=loupan_tab>
+{'address': '红光路,近汉城南路                            ',
+ 'bedrooms': ['3室户型 (4)'],
+ 'developer': '重庆德杰地产集团有限公司',
+ 'house_type': '住宅',
+ 'name': '德杰状元府邸',
+ 'price': '住宅10700元/㎡',
+ 'region': '城西',
+ 'release': '预计4月中下旬推出1号楼',
+ 'status': '期房在售',
+ 'street': '土门',
+ 'tags': ['轨交房', '二至三环', '双卫', '大阳台', '大平层'],
+ 'turn': '2019-12-30'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-414890.html?from=loupan_tab>
+{'address': '北三环北辰立交往北500米路西                            ',
+ 'bedrooms': ['3室户型 (6)', '4室户型 (3)', '5室户型 (2)'],
+ 'developer': '陕西省建秦房地产开发有限公司（碧桂园控股）',
+ 'house_type': '住宅',
+ 'name': '碧桂园凤凰城',
+ 'price': '住宅12000元/㎡',
+ 'region': '城北',
+ 'release': '2018-01-21',
+ 'status': '期房在售',
+ 'street': '港务区',
+ 'tags': ['品牌开发商', '南北通透', '刚需房', '大型社区', '三环以外'],
+ 'turn': '2020-06-30'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-431249.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-415230.html?from=loupan_tab>
+{'address': '世纪大道,近车城西路                            ',
+ 'bedrooms': ['1室户型 (6)', '2室户型 (2)', '3室户型 (9)'],
+ 'developer': '西安恒盛置业有限公司',
+ 'house_type': '住宅',
+ 'name': '恒大都市广场',
+ 'price': '住宅8800元/㎡',
+ 'region': '西咸新区',
+ 'release': '预计3月推二期1、2号楼',
+ 'status': '期房在售',
+ 'street': '沣东新城',
+ 'tags': ['轨交房', '品牌开发商', '刚需房', '即将开盘', '大型社区'],
+ 'turn': '2019-12-31'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-242702.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-383876.html?from=loupan_tab>
+{'address': '西部大道与子午大道交汇处向南500米                            ',
+ 'bedrooms': ['3室户型 (4)', '4室户型 (3)'],
+ 'developer': '西安明瑞进达合能置业有限公司',
+ 'house_type': '住宅',
+ 'name': '合能公馆',
+ 'price': '住宅待定',
+ 'region': '长安',
+ 'release': '待定',
+ 'status': '待售',
+ 'street': '大学城',
+ 'tags': ['综合体', '车位充足', '南北通透', '刚需房', '改善房'],
+ 'turn': '待定'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-411704.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-248923.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-417987.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-431249.html?from=loupan_tab>
+{'address': '科源路东北角                            ',
+ 'bedrooms': ['2室户型 (1)', '3室户型 (2)'],
+ 'developer': '绿地集团西安沣东置业有限公司',
+ 'house_type': '住宅',
+ 'name': '绿地新里城',
+ 'price': '住宅待定',
+ 'region': '西咸新区',
+ 'release': '后期房源待定',
+ 'status': '待售',
+ 'street': '沣东新城',
+ 'tags': ['品牌开发商', '人车分流', '车位充足', '大型社区', '三环以外'],
+ 'turn': '后期房源待定'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-415721.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-242702.html?from=loupan_tab>
+{'address': '玄武东路中段华远海蓝城小学北100米路西                            ',
+ 'bedrooms': ['2室户型 (8)', '3室户型 (12)'],
+ 'developer': '西安骏华房地产开发有限公司',
+ 'house_type': '住宅',
+ 'name': '华远海蓝城',
+ 'price': '住宅待定',
+ 'region': '城东',
+ 'release': '2018-02-27',
+ 'status': '待售',
+ 'street': '辛家庙',
+ 'tags': ['轨交房', '二至三环', '投资地产', '旅游地产', '南北通透'],
+ 'turn': '2019-06-30'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-414233.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-413573.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-411704.html?from=loupan_tab>
+{'address': '科技七路,近唐延路                            ',
+ 'bedrooms': ['2室户型 (2)', '3室户型 (1)', '4室户型 (3)', '5室户型 (1)'],
+ 'developer': '西安高新万达广场有限公司',
+ 'house_type': '住宅,商住',
+ 'name': '万达西安ONE',
+ 'price': '住宅待定,商住待定',
+ 'region': '高新',
+ 'release': '2017-12-24',
+ 'status': '待售',
+ 'street': '科技路',
+ 'tags': ['轨交房', '二至三环', '投资地产', '南北通透', '高端会所'],
+ 'turn': '2019-06-30'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-248923.html?from=loupan_tab>
+{'address': '咸宋路,近福银高速                            ',
+ 'bedrooms': ['1室户型 (1)', '2室户型 (2)', '3室户型 (2)'],
+ 'developer': '绿地集团西安置业有限公司',
+ 'house_type': '住宅',
+ 'name': '绿地国宝21城',
+ 'price': '住宅7500元/㎡',
+ 'region': '西咸新区',
+ 'release': '2018-01-23',
+ 'status': '期房在售',
+ 'street': '空港新城',
+ 'tags': ['南北通透', '刚需房', '三环以外', '大阳台', '低总价'],
+ 'turn': '2018-10-31'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-417987.html?from=loupan_tab>
+{'address': '泾渭一路16号                            ',
+ 'bedrooms': ['2室户型 (9)', '3室户型 (2)'],
+ 'developer': '陕西达昌工贸有限公司',
+ 'house_type': '住宅',
+ 'name': '城市蓝湾',
+ 'price': '住宅4800元/㎡',
+ 'region': '泾渭',
+ 'release': '2017-08-06',
+ 'status': '期房在售',
+ 'street': '泾渭工业园',
+ 'tags': ['刚需房', '三环以外', '双卫', '大阳台', '大型超市'],
+ 'turn': '2019-12-31'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-425393.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-400921.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-251301.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-415721.html?from=loupan_tab>
+{'address': '兴教大街与崇文路交汇处                            ',
+ 'bedrooms': ['2室户型 (1)', '3室户型 (1)'],
+ 'developer': '陕西西咸新区空港新城美术城发展有限公司',
+ 'house_type': '住宅',
+ 'name': '西安国际美术城',
+ 'price': '住宅15000元/㎡',
+ 'region': '西咸新区',
+ 'release': '2015-12-15',
+ 'status': '期房在售',
+ 'street': '空港新城',
+ 'tags': ['改善房', '高端会所', '三环以外', '供暖楼盘', '交通枢纽'],
+ 'turn': '2018-06-30'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-414233.html?from=loupan_tab>
+{'address': '玄武路,近凝晖巷                            ',
+ 'bedrooms': ['3室户型 (2)', '4室户型 (2)'],
+ 'developer': '西安立景房地产开发有限公司 ',
+ 'house_type': '住宅',
+ 'name': '保利中航樾公馆',
+ 'price': '住宅待定',
+ 'region': '城北',
+ 'release': '开盘时间待定',
+ 'status': '待售',
+ 'street': '大明宫',
+ 'tags': ['轨交房', '品牌开发商', '综合体', '刚需房', '公交枢纽'],
+ 'turn': '交房时间待定'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-413573.html?from=loupan_tab>
+{'address': '东长安街与京东大道十字西南角                            ',
+ 'bedrooms': [],
+ 'developer': '西安航天城实业发展有限公司',
+ 'house_type': '办公楼',
+ 'name': '航天城中心广场',
+ 'price': '9700元/㎡',
+ 'region': '长安',
+ 'release': '2017-11-09',
+ 'status': '期房在售',
+ 'street': '航天基地',
+ 'tags': ['轨交房', '综合体', '投资地产', '车位充足', '三环以外'],
+ 'turn': '2019-06-30'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-246382.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-425393.html?from=loupan_tab>
+{'address': '西高路,近桑军路                            ',
+ 'bedrooms': ['3室户型 (2)', '4室户型 (1)'],
+ 'developer': '西安君诚科技投资有限公司',
+ 'house_type': '住宅',
+ 'name': '西安恒大雅苑',
+ 'price': '住宅7400元/㎡',
+ 'region': '泾渭',
+ 'release': '2017-09-24',
+ 'status': '期房在售',
+ 'street': '泾渭工业园',
+ 'tags': ['品牌开发商', '综合体', '南北通透', '刚需房', '三环以外'],
+ 'turn': '2019-12-31'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-400921.html?from=loupan_tab>
+{'address': '浐河西路,近东月路                            ',
+ 'bedrooms': ['2室户型 (4)', '3室户型 (8)', '4室户型 (3)'],
+ 'developer': '绿地集团浐灞实业有限公司',
+ 'house_type': '住宅',
+ 'name': '绿地与湖',
+ 'price': '住宅待定',
+ 'region': '浐灞',
+ 'release': '后期房源开盘时间待定',
+ 'status': '待售',
+ 'street': '浐河',
+ 'tags': ['轨交房', '二至三环', '品牌开发商', '综合体', '南北通透'],
+ 'turn': '后期房源交房时间待定'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-251301.html?from=loupan_tab>
+{'address': '丈八北路                            ',
+ 'bedrooms': ['1室户型 (1)', '2室户型 (1)', '3室户型 (3)', '4室户型 (1)'],
+ 'developer': '西安永和置业有限公司',
+ 'house_type': '住宅,商住',
+ 'name': '永和璞玉',
+ 'price': '住宅21000元/㎡(单价范围21000-22000元/㎡),商住待定',
+ 'region': '高新',
+ 'release': '2017-05-01',
+ 'status': '现房在售',
+ 'street': '科技路',
+ 'tags': ['轨交房', '二至三环', '南北通透', '刚需房', '商场'],
+ 'turn': '2017-12-31'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-244474.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-248793.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-246382.html?from=loupan_tab>
+{'address': '邰城路                            ',
+ 'bedrooms': ['2室户型 (1)', '3室户型 (12)'],
+ 'developer': '陕西耀泽四海房地产开发有限公司',
+ 'house_type': '住宅',
+ 'name': '杨凌恒大城',
+ 'price': '住宅5800元/㎡',
+ 'region': '西安周边',
+ 'release': '2014-03-01',
+ 'status': '现房在售',
+ 'street': '杨凌',
+ 'tags': ['南北通透', '大型社区', '双卫', '大阳台', '低总价'],
+ 'turn': '2016-12-31'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-254547.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-244695.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-244474.html?from=loupan_tab>
+{'address': '雁塔南路888号                            ',
+ 'bedrooms': ['2室户型 (1)', '3室户型 (4)', '4室户型 (4)'],
+ 'developer': '陕西英泰置业有限公司',
+ 'house_type': '住宅',
+ 'name': '曲江千林郡',
+ 'price': '住宅12200元/㎡(单价范围12200-13000元/㎡)',
+ 'region': '曲江区',
+ 'release': '2017-07-29',
+ 'status': '期房在售',
+ 'street': '曲江新区',
+ 'tags': ['轨交房', '南北通透', '刚需房', '大型社区', '三环以外'],
+ 'turn': '2019-12-31'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-248793.html?from=loupan_tab>
+{'address': '渭阳路和西高路交汇处东南角50米                            ',
+ 'bedrooms': ['2室户型 (2)', '3室户型 (7)'],
+ 'developer': '陕西嘉园置业有限公司',
+ 'house_type': '住宅',
+ 'name': '蓝湖九郡',
+ 'price': '住宅5500元/㎡',
+ 'region': '泾渭',
+ 'release': '2017-08-10',
+ 'status': '期房在售',
+ 'street': '泾渭工业园',
+ 'tags': ['南北通透', '刚需房', '大型社区', '三环以外', '双卫'],
+ 'turn': '2019-12-31'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-297804.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-418029.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-254547.html?from=loupan_tab>
+{'address': '南二环,近群贤路                            ',
+ 'bedrooms': ['2室户型 (1)', '3室户型 (7)', '4室户型 (4)'],
+ 'developer': None,
+ 'house_type': '住宅',
+ 'name': '群贤道九号',
+ 'price': '住宅18500元/㎡',
+ 'region': '高新',
+ 'release': '2017-09-19',
+ 'status': '期房在售',
+ 'street': '唐延路',
+ 'tags': ['轨交房', '二至三环', '南北通透', '刚需房', '高端会所'],
+ 'turn': '2018-08-31'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-242527.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-244695.html?from=loupan_tab>
+{'address': '泾高南路,近渭华路                            ',
+ 'bedrooms': ['2室户型 (4)', '3室户型 (3)'],
+ 'developer': '西安鑫淼置业有限公司',
+ 'house_type': '住宅',
+ 'name': '香林郡',
+ 'price': '住宅5880元/㎡',
+ 'region': '泾渭',
+ 'release': '2017-09-10',
+ 'status': '期房在售',
+ 'street': '泾渭工业园',
+ 'tags': ['刚需房', '大阳台', '低总价', '河景', '学校'],
+ 'turn': '2019-06-30'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-414108.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-244460.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-416693.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-297804.html?from=loupan_tab>
+{'address': '人民北路53号                            ',
+ 'bedrooms': ['2室户型 (1)', '3室户型 (5)'],
+ 'developer': '陕西德杰房地产开发有限公司',
+ 'house_type': '住宅',
+ 'name': '德杰德裕天下',
+ 'price': '住宅6300元/㎡(单价范围6300-6800元/㎡)',
+ 'region': '西安周边',
+ 'release': '2017-12-16',
+ 'status': '期房在售',
+ 'street': '临潼',
+ 'tags': ['轨交房', '南北通透', '三环以外', '大阳台', '飘窗'],
+ 'turn': '2020-05-30'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-418029.html?from=loupan_tab>
+{'address': '丈八北路,近科技四路                            ',
+ 'bedrooms': ['3室户型 (1)'],
+ 'developer': '陕西尚润房地产开发有限公司',
+ 'house_type': '住宅',
+ 'name': '保利天悦',
+ 'price': '住宅18500元/㎡',
+ 'region': '高新',
+ 'release': '2018-01-19',
+ 'status': '期房在售',
+ 'street': '唐延路',
+ 'tags': ['二至三环', '人车分流', '南北通透', '改善房', '大型社区'],
+ 'turn': '2020-02-27'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-415065.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-297456.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-242527.html?from=loupan_tab>
+{'address': '桃园北路,近梨园路                            ',
+ 'bedrooms': ['1室户型 (1)', '2室户型 (3)', '3室户型 (4)', '4室户型 (2)', '别墅户型 (3)'],
+ 'developer': '西安富都房地产开发有限公司',
+ 'house_type': '住宅,别墅',
+ 'name': '阳光台365',
+ 'price': '别墅17000元/㎡,住宅15000元/㎡',
+ 'region': '城西',
+ 'release': '2017-02-18',
+ 'status': '期房在售',
+ 'street': '大兴新区',
+ 'tags': ['南北通透', '大型社区', '二环以内', '双卫', '大阳台'],
+ 'turn': '2019-12-31'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-414108.html?from=loupan_tab>
+{'address': '南三环,近雁引路                            ',
+ 'bedrooms': ['2室户型 (1)', '3室户型 (11)', '4室户型 (2)'],
+ 'developer': '美好置业集团股份有限公司',
+ 'house_type': '住宅',
+ 'name': '曲江美好时光',
+ 'price': '住宅待定',
+ 'region': '曲江区',
+ 'release': '2017-12-11',
+ 'status': '待售',
+ 'street': '曲江新区',
+ 'tags': ['二至三环', '品牌开发商', '新开盘', '南北通透', '刚需房'],
+ 'turn': '2019-09-30'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-244460.html?from=loupan_tab>
+{'address': '团结南路12号（唐兴路与团结南路交汇处向南200米路西高新医院北侧）                            ',
+ 'bedrooms': ['商住户型 (2)'],
+ 'developer': '陕西量得实业开发有限公司',
+ 'house_type': '商住',
+ 'name': 'GTTower西安国际人才大厦',
+ 'price': '商住18000元/㎡(单价范围16700-18000元/㎡)',
+ 'region': '高新',
+ 'release': '2015-10-30',
+ 'status': '期房在售',
+ 'street': '大寨路',
+ 'tags': ['轨交房', '二至三环', '综合体', '投资地产', '刚需房'],
+ 'turn': '2018-09-30'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-416693.html?from=loupan_tab>
+{'address': '大兴东路与劳动北路西南侧（大兴管委会东侧）                            ',
+ 'bedrooms': ['1室户型 (2)', '2室户型 (3)', '3室户型 (2)'],
+ 'developer': '西安天朗地产集团有限公司',
+ 'house_type': '住宅',
+ 'name': '天朗玖悦都',
+ 'price': '住宅14000元/㎡',
+ 'region': '城西',
+ 'release': '2017-10-01',
+ 'status': '期房在售',
+ 'street': '大兴新区',
+ 'tags': ['人车分流', '银行', '公积金贷款', '刚需房', '南北通透'],
+ 'turn': '2019-10-31'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-273544.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-253107.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-404098.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-414624.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-415065.html?from=loupan_tab>
+{'address': '新兴南路与浐河西路交汇处                            ',
+ 'bedrooms': ['2室户型 (1)', '3室户型 (3)', '别墅户型 (2)'],
+ 'developer': '西安宝泽房地产开发有限公司',
+ 'house_type': '住宅,别墅',
+ 'name': '海伦湾',
+ 'price': '住宅待定,别墅待定',
+ 'region': '浐灞',
+ 'release': '16号楼开盘时间待定',
+ 'status': '待售',
+ 'street': '浐河',
+ 'tags': ['轨交房', '二至三环', '南北通透', '双卫', '大阳台'],
+ 'turn': '16号楼交房时间待定'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-297456.html?from=loupan_tab>
+{'address': '子午大道,近学府大街                            ',
+ 'bedrooms': ['3室户型 (5)', '4室户型 (3)'],
+ 'developer': '西安万景美奂置业有限公司',
+ 'house_type': '住宅',
+ 'name': '万景荔知湾',
+ 'price': '住宅10500元/㎡',
+ 'region': '长安',
+ 'release': '2017-05-27',
+ 'status': '期房在售',
+ 'street': '郭杜',
+ 'tags': ['南北通透', '刚需房', '三环以外', '双卫', '大阳台'],
+ 'turn': '2018-12-30'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-242992.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-273544.html?from=loupan_tab>
+{'address': '咸宁路与长田路交汇处向北80米                            ',
+ 'bedrooms': ['2室户型 (2)', '3室户型 (7)', '4室户型 (2)'],
+ 'developer': '陕西龙腾华德房地产开发有限公司',
+ 'house_type': '住宅',
+ 'name': '龙腾万都汇',
+ 'price': '住宅待定',
+ 'region': '城东',
+ 'release': '后期房源开盘时间待定',
+ 'status': '待售',
+ 'street': '韩森寨',
+ 'tags': ['轨交房', '二至三环', '综合体', '人车分流', '车位充足'],
+ 'turn': '后期房源交房时间待定'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-253107.html?from=loupan_tab>
+{'address': '世纪大道,近上林路                            ',
+ 'bedrooms': ['2室户型 (1)', '3室户型 (5)'],
+ 'developer': '阳光城集团西安分公司',
+ 'house_type': '住宅',
+ 'name': '阳光城壹号',
+ 'price': '住宅15000元/㎡(单价范围13000-17000元/㎡)',
+ 'region': '西咸新区',
+ 'release': '2017-12-27',
+ 'status': '期房在售',
+ 'street': '沣东新城',
+ 'tags': ['南北通透', '三环以外', '银行', '大阳台', '复合地产'],
+ 'turn': '2019-12-31'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-297640.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-404098.html?from=loupan_tab>
+{'address': '兰池二路,近秦汉大道                            ',
+ 'bedrooms': ['别墅户型 (5)'],
+ 'developer': '西咸新区中天房地产开发有限公司',
+ 'house_type': '别墅',
+ 'name': '中天诚品',
+ 'price': '尚未公开',
+ 'region': '西咸新区',
+ 'release': '2018年将推新品',
+ 'status': '期房在售',
+ 'street': '秦汉新城',
+ 'tags': ['豪宅', '车位充足', '改善房', '大型社区', '三环以外'],
+ 'turn': '2018-12-30'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-251293.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-426483.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-414624.html?from=loupan_tab>
+{'address': '马玄路,近二环北路东段                            ',
+ 'bedrooms': ['1室户型 (5)', '2室户型 (1)', '4室户型 (2)', '别墅户型 (5)'],
+ 'developer': '西安铁兴房地产开发有限公司',
+ 'house_type': '住宅,别墅,商住',
+ 'name': '中国铁建西派国际',
+ 'price': '住宅17000元/㎡,商住13000元/㎡',
+ 'region': '城北',
+ 'release': '2017-12-10',
+ 'status': '期房在售',
+ 'street': '大明宫',
+ 'tags': ['轨交房', '品牌开发商', '南北通透', '公交枢纽', '改善房'],
+ 'turn': '2019-12-31'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-242992.html?from=loupan_tab>
+{'address': '幸福南路85号                            ',
+ 'bedrooms': ['2室户型 (6)', '3室户型 (8)', '4室户型 (2)'],
+ 'developer': '西安华清科教产业(集团)有限公司',
+ 'house_type': '住宅',
+ 'name': '华清学府城',
+ 'price': '住宅12000元/㎡',
+ 'region': '城东',
+ 'release': '2018-01-01',
+ 'status': '期房在售',
+ 'street': '建工路',
+ 'tags': ['轨交房', '二至三环', '南北通透', '刚需房', '大型社区'],
+ 'turn': '2019-08-30'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-297640.html?from=loupan_tab>
+{'address': '浐灞秦汉大道与灞河东路交汇处向北200米                            ',
+ 'bedrooms': ['2室户型 (2)', '3室户型 (11)', '4室户型 (2)'],
+ 'developer': '西安颐馨置业有限公司',
+ 'house_type': '住宅',
+ 'name': '颐馨湿地壹號',
+ 'price': '住宅8500元/㎡',
+ 'region': '城北',
+ 'release': '2017-10-16',
+ 'status': '期房在售',
+ 'street': '港务区',
+ 'tags': ['南北通透', '三环以外', '双卫', '大阳台', '飘窗'],
+ 'turn': '2019-08-31'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-251293.html?from=loupan_tab>
+{'address': '灞柳一路与纺园五路十字东南角                            ',
+ 'bedrooms': ['2室户型 (1)', '3室户型 (5)', '4室户型 (1)', '5室户型 (2)'],
+ 'developer': '西安富力湾房地产开发有限公司',
+ 'house_type': '住宅',
+ 'name': '富力白鹭湾',
+ 'price': '住宅9600元/㎡(单价范围9600-10500元/㎡)',
+ 'region': '浐灞',
+ 'release': '2017-11-25',
+ 'status': '期房在售',
+ 'street': '灞河',
+ 'tags': ['轨交房', '品牌开发商', '投资地产', '刚需房', '高端会所'],
+ 'turn': '2019-05-30'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-426483.html?from=loupan_tab>
+{'address': '凤城六路与未央路十字向东800米                            ',
+ 'bedrooms': ['3室户型 (3)'],
+ 'developer': '西安惠风房地产开发有限公司',
+ 'house_type': '住宅',
+ 'name': '惠风壹品',
+ 'price': '住宅11000元/㎡',
+ 'region': '经济开发区',
+ 'release': '2017年11月13日',
+ 'status': '期房在售',
+ 'street': '行政中心',
+ 'tags': ['轨交房', '二至三环', '刚需房', '公交枢纽', '改善房'],
+ 'turn': '2020-12-31'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-264148.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-414813.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-248718.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://xa.fang.anjuke.com/loupan/canshu-432542.html?from=loupan_tab> (referer: https://xa.fang.anjuke.com/?from=navigation)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-264148.html?from=loupan_tab>
+{'address': '航天大道,近神舟六路                            ',
+ 'bedrooms': ['2室户型 (2)', '3室户型 (7)', '4室户型 (3)'],
+ 'developer': '西安建工集团有限公司',
+ 'house_type': '住宅',
+ 'name': '英郡年华国际社区',
+ 'price': '住宅11500元/㎡(最低147元/㎡起)',
+ 'region': '长安',
+ 'release': '2018-02-03',
+ 'status': '期房在售',
+ 'street': '航天基地',
+ 'tags': ['轨交房', '品牌开发商', '南北通透', '三环以外', '洋房'],
+ 'turn': '23#2019年9月30日交房'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-414813.html?from=loupan_tab>
+{'address': '东二环胡家庙地铁站北500米                            ',
+ 'bedrooms': ['1室户型 (3)', '2室户型 (6)', '3室户型 (2)'],
+ 'developer': '西安红杉房地产开发有限公司',
+ 'house_type': '住宅',
+ 'name': '天伦佐治公馆',
+ 'price': '住宅9900元/㎡',
+ 'region': '城东',
+ 'release': '2018-03-04',
+ 'status': '期房在售',
+ 'street': '胡家庙',
+ 'tags': ['轨交房', '二至三环', '品牌开发商', '南北通透', '刚需房'],
+ 'turn': '2018-12-31'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-248718.html?from=loupan_tab>
+{'address': '北辰大道,近浐灞二路                            ',
+ 'bedrooms': ['商住户型 (5)', '2室户型 (4)', '3室户型 (6)', '4室户型 (1)', '5室户型 (2)'],
+ 'developer': None,
+ 'house_type': '住宅,商住',
+ 'name': '绿地香树花城',
+ 'price': '住宅12000元/㎡,商住12000元/㎡',
+ 'region': '城北',
+ 'release': '2017-12-08',
+ 'status': '现房在售',
+ 'street': '百花村',
+ 'tags': ['二至三环', '品牌开发商', '投资地产', '旅游地产', '南北通透'],
+ 'turn': '2018-11-20'}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://xa.fang.anjuke.com/loupan/canshu-432542.html?from=loupan_tab>
+{'address': '航天大道与神舟六路十字东南角                            ',
+ 'bedrooms': ['2室户型 (1)', '3室户型 (7)', '4室户型 (3)'],
+ 'developer': '陕西锦绣华天置业有限公司',
+ 'house_type': '住宅',
+ 'name': '陕建翠园锦绣',
+ 'price': '住宅9600元/㎡(单价范围9600-10800元/㎡)',
+ 'region': '长安',
+ 'release': '2017-12-23',
+ 'status': '期房在售',
+ 'street': '航天基地',
+ 'tags': ['学校', '带幼儿园', '湖景', '改善房', '南北通透'],
+ 'turn': '2020-06-30'}
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 27247,
+ 'downloader/request_count': 51,
+ 'downloader/request_method_count/GET': 51,
+ 'downloader/response_bytes': 1570482,
+ 'downloader/response_count': 51,
+ 'downloader/response_status_count/200': 51,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 11, 16, 3, 39, 423648),
+ 'item_scraped_count': 50,
+ 'log_count/DEBUG': 102,
+ 'log_count/INFO': 7,
+ 'request_depth_max': 1,
+ 'response_received_count': 51,
+ 'scheduler/dequeued': 51,
+ 'scheduler/dequeued/memory': 51,
+ 'scheduler/enqueued': 51,
+ 'scheduler/enqueued/memory': 51,
+ 'start_time': datetime.datetime(2018, 3, 11, 16, 3, 35, 250648)}
+INFO:scrapy.core.engine:Spider closed (finished)

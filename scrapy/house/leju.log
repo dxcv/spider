@@ -1,0 +1,75 @@
+INFO:scrapy.utils.log:Scrapy 1.5.0 started (bot: house)
+INFO:scrapy.utils.log:Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.5.0, Python 3.6.4 |Anaconda, Inc.| (default, Jan 16 2018, 18:10:19) - [GCC 7.2.0], pyOpenSSL 17.5.0 (OpenSSL 1.0.2n  7 Dec 2017), cryptography 2.1.4, Platform Linux-4.14.0-deepin2-amd64-x86_64-with-debian-8.0
+INFO:scrapy.crawler:Overridden settings: {'BOT_NAME': 'house', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'house.spiders', 'SPIDER_MODULES': ['house.spiders'], 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'}
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+['house.pipelines.HousePipeline']
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+DEBUG:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (200) <GET http://newhouse.xian.fang.com/house/s/?ctm=1.xian.xf_search.page.1> (referer: None)
+INFO:scrapy.crawler:Received SIG_SETMASK, shutting down gracefully. Send again to force 
+INFO:scrapy.core.engine:Closing spider (shutdown)
+INFO:scrapy.crawler:Received SIG_SETMASK twice, forcing unclean shutdown
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://qujiangdachengzh.fang.com/> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://lizigongguanygc029.fang.com/> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://guobao21cheng.fang.com/> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://shiyuanshoufu.fang.com/> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://tianyuedongdu.fang.com/> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://wanliutianyue.fang.com/> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://yingjunnianhuaguojishequ.fang.com/> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://zuozhigongguantl.fang.com/> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://hengdachengyl.fang.com/> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://jinsejiayuan029.fang.com/> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://gongyuanshijiadhqj2.fang.com/> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://yuemeiguoji029.fang.com/> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://xiangshuhuachengld.fang.com/> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://dushiguangchanghd029.fang.com/> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://fenghuangchengbgy029.fang.com/> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://wanliu.fang.com/> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/exception_count': 16,
+ 'downloader/exception_type_count/twisted.web._newclient.ResponseNeverReceived': 16,
+ 'downloader/request_bytes': 7431,
+ 'downloader/request_count': 17,
+ 'downloader/request_method_count/GET': 17,
+ 'downloader/response_bytes': 46045,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2018, 3, 9, 0, 26, 34, 351112),
+ 'log_count/INFO': 9,
+ 'memusage/max': 55685120,
+ 'memusage/startup': 55685120,
+ 'request_depth_max': 1,
+ 'response_received_count': 1,
+ 'retry/count': 16,
+ 'retry/reason_count/twisted.web._newclient.ResponseNeverReceived': 16,
+ 'scheduler/dequeued': 17,
+ 'scheduler/dequeued/memory': 17,
+ 'scheduler/enqueued': 73,
+ 'scheduler/enqueued/memory': 73,
+ 'start_time': datetime.datetime(2018, 3, 9, 0, 25, 35, 35087)}
+INFO:scrapy.core.engine:Spider closed (shutdown)
